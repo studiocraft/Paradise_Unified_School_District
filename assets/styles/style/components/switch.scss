@@ -1,0 +1,88 @@
+input.switch {
+  display: none;
+
+// OFF
+  &:empty {
+
+    & ~ label {
+    color: $main-blue;
+    font-weight: $font-weight;
+    position: relative;
+    float: left;
+    height: $switch-dimension;
+    line-height: $line-height-base;
+    text-indent: ($switch-dimension * 2) + $switch-dimension / 2.5;
+    padding-right: ($switch-dimension * 2) + $switch-dimension / 2.5;
+    margin: 0;
+    left: $switch-dimension / 2.5;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+      &:hover {
+        color: $link-hover-color;
+        text-decoration: underline;
+      }
+
+      &:before,
+      &:after {
+        position: absolute;
+        display: block;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        content: ' ';
+        width: $switch-dimension * 2;
+        border-radius: $switch-dimension;
+        background-color: $main-red;
+        -webkit-transition: all 100ms ease-in;
+        transition: all 100ms ease-in;
+      }
+
+      &:after {
+        width: $switch-dimension - ($switch-border * 2);
+        background-color: $main-body-bg;
+        margin: $switch-border;
+      }
+    }
+
+// OFF AND DISABLED
+    &:disabled {
+      & ~ label {
+        cursor: not-allowed;
+
+        &:before {
+          background-color: $main-gray-light;
+        }
+      }
+    }
+  }
+
+// ON
+  &:checked {
+
+    & ~ label {
+
+      &:before {
+        background-color: $main-lime;
+      }
+
+      &:after {
+        margin-left: $switch-dimension + $switch-border;
+      }
+    }
+
+// ON AND DISABLED
+    &:disabled {
+      & ~ label {
+        cursor: not-allowed;
+
+        &:before {
+          background-color: $main-gray-light;
+        }
+      }
+    }
+  }
+}

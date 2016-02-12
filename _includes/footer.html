@@ -1,0 +1,36 @@
+<footer class="text-center">
+  <div class="container">
+    <hr>
+    <ul class="list-unstyled list-inline">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Site Map</a></li>
+    </ul>
+    <ul class="list-unstyled list-inline">
+      <li><a href="#">Schools & Programs</a></li>
+      <li><a href="#">Departments</a></li>
+      <li><a href="#">Resources</a></li>
+      <li><a href="#">News & Press</a></li>
+    </ul>
+    {% include social-networks.html %}
+    {% include scroll-top.html %}
+    <p>
+      Copyright
+      <i class="fa fa-fw fa-copyright"></i>
+      <time>{{ site.time | date: "%Y" }}</time>&nbsp;<a href="{{ site.baseurl }}/">{{ site.title }}</a>.
+      All rights reserved
+      &nbsp;&middot;&nbsp;
+      <a href="#modal-privacy" data-toggle="modal">Privacy Policy</a>
+      &nbsp;&middot;&nbsp;
+      <a href="#modal-terms" data-toggle="modal">Terms & Conditions</a>
+    </p>
+  </div>
+</footer>
+<script src="{{ site.baseurl }}/assets/js/jquery.min.js"></script>
+<script src="{{ site.baseurl }}/assets/js/bootstrap.min.js"></script>
+{% if site.github %}
+<script src="{{ site.baseurl }}/assets/js/main.min.js"></script>
+{% else %}
+<script src="{{ site.baseurl }}/assets/js/main.js"></script>
+{% endif %}

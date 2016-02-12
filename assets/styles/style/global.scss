@@ -1,0 +1,13 @@
+body {
+  font-weight: $font-weight;
+}
+
+::selection {
+	color: white;
+	background-color: $main-blue;
+}
+
+::-moz-selection {
+	color: white;
+	background-color: $main-blue;
+}

@@ -1,0 +1,21 @@
+encoding:       utf-8
+
+port:           3001
+url:            http://bryancolosky.github.io
+baseurl:        /paradise
+permalink:      pretty
+paginate:       3
+paginate_path:  /blog/page:num/
+
+gems:           [jekyll-paginate]
+
+title:          Paradise Unified School District
+
+author:
+  name:         Bryan Colosky
+  url:          http://studiocraft.cc
+  about:
+  email:        bryan.colosky@studiocraft.cc
+  location:     New York City
+
+exclude:        [package.json, bower.json, gulpfile.js, node_modules, bower_components, gulp, /**/styles, /**/scripts, .bowerrc, .sass-cache, .DS_Store, .gitignore, .editorconfig, .jshintrc, /*.txt, /*.md, /*.ai, /*.pdf, /*.indd, /*.idlk, /*.yml]

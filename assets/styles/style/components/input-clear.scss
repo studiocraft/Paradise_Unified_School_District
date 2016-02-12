@@ -1,0 +1,14 @@
+[data-input="clear"] {
+  pointer-events: auto;
+  color: $main-gray-light;
+
+  &:hover,
+  &:active {
+    color: $main-red;
+  }
+
+  &:focus {
+    outline: none;
+    color: $main-gray-light;
+  }
+}

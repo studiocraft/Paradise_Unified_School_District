@@ -1,0 +1,24 @@
+{
+  "name": "paradise_unified_school_district",
+  "version": "1.0.0",
+  "homepage": "http://studiocraft.cc",
+  "authors": [
+    "Bryan Colosky <bryan.colosky@studiocraft.cc>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "respond": "~1.4.2",
+    "font-awesome": "~4.5.0",
+    "zoom.js": "~0.0.1",
+    "bootstrap-sass": "^3.3.6",
+    "weather-icons": "^2.0.10",
+    "flag-icon-css": "^1.1.0"
+  }
+}

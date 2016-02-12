@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en" id="top">
+  <head>
+  {% include head.html %}
+  </head>
+  <body id="{{ page.slug }}" class="container-fluid">
+    {% include navbar.html %}
+    <main id="content">
+      {{ content }}
+    </main>
+    {% include footer.html %}
+  </body>
+</html>

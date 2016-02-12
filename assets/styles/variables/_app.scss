@@ -1,0 +1,56 @@
+$main-navy:          rgba(0,31,63,1);
+$main-blue:          rgba(0,116,217,1);
+$main-aqua:          rgba(127,219,255,1);
+$main-teal:          rgba(57,204,204,1);
+$main-olive:          rgba(60,83,13,1);
+$main-green:          rgba(46,204,64,1);
+$main-lime:          rgba(1,255,112,1);
+$main-yellow:        rgba(255,220,0,1);
+$main-orange:        rgba(255,133,27,1);
+$main-red:            rgba(255,65,54,1);
+$main-maroon:        rgba(133,20,75,1);
+$main-fuchsia:        rgba(240,18,190,1);
+$main-purple:        rgba(177,13,201,1);
+$main-black:          rgba(17,17,17,1);
+$main-gray:          rgba(170,170,170,1);
+$main-silver:        rgba(221,221,221,1);
+
+$main-gray-base:             $main-black;
+$main-gray-darker:           rgba(36,36,36,1);
+$main-gray-dark:             rgba(76,76,76,1);
+$main-gray:                  rgba(114,114,114,1);
+$main-gray-light:            rgba(152,152,152,1);
+$main-gray-lighter:          rgba(228,228,228,1);
+
+$main-body-bg:               white;
+
+$main-base-dimension: 14px;
+
+$font-weight:            300;
+$btn-font-weight:        $font-weight;
+
+$switch-dimension: $main-base-dimension * 1.25;
+$switch-border: $main-base-dimension / 6;
+
+$scroll-bar-dimension: $main-base-dimension;
+$scroll-bar-radius: $scroll-bar-dimension / 2;
+
+@mixin shadow($shadow-size,$shadow-blur,$shadow-color) {
+  box-shadow: $shadow-size $shadow-size $shadow-blur $shadow-color, 0px 0px $shadow-size lighten($shadow-color,5%);
+}
+
+@mixin track() {
+  width: $track-width;
+  height: $track-height;
+  cursor: pointer;
+}
+
+@mixin thumb() {
+  @include shadow($thumb-shadow-size,$thumb-shadow-blur,$thumb-shadow-color);
+  border: $thumb-border-width solid $thumb-border-color;
+  height: $thumb-height;
+  width: $thumb-width;
+  border-radius: $thumb-radius;
+  background: $thumb-color;
+  cursor: pointer;
+}
